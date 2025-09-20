@@ -1,0 +1,76 @@
+/* Genel sayfa */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fef9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+  color: #333;
+}
+
+/* Kart kutusu */
+.card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px 20px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+/* Balonlar */
+.balloons {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #ff4d6d;
+}
+
+.name {
+  color: #ff9800;
+}
+
+.message {
+  font-size: 1rem;
+  margin-bottom: 18px;
+  color: #555;
+}
+
+.signature {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* Şimşek animasyonu */
+.bolt {
+  display: inline-block;
+  animation: flash 1.5s infinite;
+}
+
+/* Şimşek yanıp sönsün */
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* Mobil uyum */
+@media (max-width: 480px) {
+  h1 { font-size: 1.4rem; }
+  .message { font-size: 0.9rem; }
+}
